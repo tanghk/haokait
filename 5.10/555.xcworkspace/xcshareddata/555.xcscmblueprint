@@ -12,27 +12,20 @@
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "29BA199C955740B36CF91DADA9C17C0223EFDCF8" : 0,
-    "f0a1821e-c44f-4d06-a9bc-e554f2ea60ee++1388" : 0,
+    "960883fb-4c58-4791-bcd9-047ce3edc43b++7755" : 0,
     "960883fb-4c58-4791-bcd9-047ce3edc43b++7177" : 0,
-    "960883fb-4c58-4791-bcd9-047ce3edc43b++7755" : 0
+    "f0a1821e-c44f-4d06-a9bc-e554f2ea60ee++1388" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F98223DF-02FC-41E9-B0CF-7332FFE79F01",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "29BA199C955740B36CF91DADA9C17C0223EFDCF8" : "",
-    "f0a1821e-c44f-4d06-a9bc-e554f2ea60ee++1388" : "%E6%B2%83%E6%8A%95%E8%B5%84121409\/555\/OpenFrameworks\/fmdb\/JSONKit\/",
+    "960883fb-4c58-4791-bcd9-047ce3edc43b++7755" : "haoyu\/",
     "960883fb-4c58-4791-bcd9-047ce3edc43b++7177" : "%E5%88%9D%E6%9C%9F%E8%B0%83%E8%AF%95\/",
-    "960883fb-4c58-4791-bcd9-047ce3edc43b++7755" : "haoyu\/"
+    "f0a1821e-c44f-4d06-a9bc-e554f2ea60ee++1388" : "%E6%B2%83%E6%8A%95%E8%B5%84121409\/555\/OpenFrameworks\/fmdb\/JSONKit\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "555",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "555.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tanghk\/haokait.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "29BA199C955740B36CF91DADA9C17C0223EFDCF8"
-    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/182.92.176.231\/data\/svn\/ios.otouzi.com",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
