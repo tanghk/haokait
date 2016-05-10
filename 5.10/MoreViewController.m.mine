@@ -1,0 +1,68 @@
+//
+//  MoreViewController.m
+//  555
+//
+//  Created by 浩宇李 on 15/10/13.
+//  Copyright © 2015年 李浩宇. All rights reserved.
+//
+
+#import "MoreViewController.h"
+#import "ActionCenterViewController.h"//活动中心
+#import "AdCenterViewController.h"//公告中心
+#import "CommonProblemsViewController.h"//常见问题
+#import "AboutOtouziViewController.h"//关于沃投资
+#import "SafeViewController.h"// 安全保障
+#import "CheckUpdateViewController.h"//
+#import "UICommons.h"
+@interface MoreViewController ()
+
+
+
+
+
+@end
+
+@implementation MoreViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"更多";
+    
+ self.view.backgroundColor = [UIColor whiteColor];
+    
+    }
+//选中单元格
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (indexPath.row == 0) {//活动中心
+        ActionCenterViewController *actionCenterViewController = [[ActionCenterViewController alloc]init];
+        [self.navigationController pushViewController:actionCenterViewController animated:YES];
+        
+    }else if (indexPath.row == 1){//公告中心
+    
+        AdCenterViewController   *adCenterViewController = [[AdCenterViewController alloc]init];
+        [self.navigationController pushViewController:adCenterViewController animated:YES];
+    
+    }else if (indexPath.row == 2){//关于沃投资
+    
+        
+    
+    }else if (indexPath.row == 3){//意见反馈
+    
+      
+        
+    }else if (indexPath.row == 4){//关于沃投资
+    
+        AboutOtouziViewController *aboutOtouziViewController = [[AboutOtouziViewController alloc]init];
+        
+        [self.navigationController pushViewController:aboutOtouziViewController animated:YES];
+    
+    }
+
+
+
+}
+
+
+
+@end

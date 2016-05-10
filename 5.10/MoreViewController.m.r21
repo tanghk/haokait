@@ -1,0 +1,113 @@
+//
+//  MoreViewController.m
+//  555
+//
+//  Created by 浩宇李 on 15/10/13.
+//  Copyright © 2015年 李浩宇. All rights reserved.
+//
+
+#import "MoreViewController.h"
+#import "ActionCenterViewController.h"//活动中心
+#import "AdCenterViewController.h"//公告中心
+#import "CommonProblemsViewController.h"//常见问题
+#import "AboutOtouziViewController.h"//关于沃投资
+#import "SafeViewController.h"// 安全保障
+#import "CheckUpdateViewController.h"//检查更新
+#import "UICommons.h"
+@interface MoreViewController ()
+
+
+
+@property (weak, nonatomic) IBOutlet UIView *shareView;
+
+
+@end
+
+@implementation MoreViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"更多";
+    
+ self.view.backgroundColor = [UIColor whiteColor];
+    
+    }
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self _createChooseButton];//新手
+    
+
+}
+//选中单元格
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (indexPath.row == 0) {//活动中心
+        ActionCenterViewController *actionCenterViewController = [[ActionCenterViewController alloc]init];
+        [self.navigationController pushViewController:actionCenterViewController animated:YES];
+        
+    }else if (indexPath.row == 1){//公告中心
+    
+        AdCenterViewController   *adCenterViewController = [[AdCenterViewController alloc]init];
+        [self.navigationController pushViewController:adCenterViewController animated:YES];
+    
+    }else if (indexPath.row == 2){//常见问题
+        
+        CommonProblemsViewController *commomProblemsViewControllers = [[CommonProblemsViewController alloc]init];
+        [self.navigationController pushViewController:commomProblemsViewControllers animated:YES];
+    
+    
+    }else if (indexPath.row == 3){//安全保障
+        SafeViewController *safeViewContronllers = [[SafeViewController alloc]init];
+        [self.navigationController pushViewController:safeViewContronllers animated:YES];
+        
+    }else if (indexPath.row == 4){//关于沃投资
+    
+        AboutOtouziViewController *aboutOtouziViewController = [[AboutOtouziViewController alloc]init];
+        
+        [self.navigationController pushViewController:aboutOtouziViewController animated:YES];
+    
+    }else if (indexPath.row == 5){//检查更新
+    
+        CheckUpdateViewController *checkUpdateViewControllers = [[CheckUpdateViewController alloc]init];
+        [self.navigationController pushViewController:checkUpdateViewControllers animated:YES];
+        
+    }
+}
+//转发好友，意见反馈
+-(void)_createChooseButton{
+    NSArray *classesArray = @[
+                              @"转给好友",
+                              @"意见反馈",
+                              @"给我鼓励",
+                              @"关于我们",
+                              ];
+    
+    for (int i=0 ; i<4; i++) {
+        UIButton *titleButton =[UIButton buttonWithType:UIButtonTypeSystem];
+        titleButton.frame = CGRectMake((kScreenWidth/4)*i, 30, kScreenWidth/4, 30);
+        [titleButton setTitle:classesArray[i] forState:UIControlStateNormal];
+        titleButton.tag = 1000+i;
+        [titleButton addTarget:self action:@selector(classButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.shareView addSubview:titleButton];
+        
+    }
+
+}
+// TODO:分类按钮的点击事件， 通过不同的按钮来requeset请求
+-(void)classButtonAction:(UIButton*)sender{
+        
+        if (sender.tag == 1000) {
+            NSLog(@"转给好友");
+        }else if (sender.tag == 1001){
+            NSLog(@"意见反馈");
+        }else if (sender.tag == 1002){
+            NSLog(@"给我鼓励");
+        }else if (sender.tag == 1003){
+            NSLog(@"关注我们");
+        }
+    }
+    
+    
+    
+@end

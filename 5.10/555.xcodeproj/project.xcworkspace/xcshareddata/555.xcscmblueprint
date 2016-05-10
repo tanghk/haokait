@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "960883fb-4c58-4791-bcd9-047ce3edc43b++7755",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "960883fb-4c58-4791-bcd9-047ce3edc43b++7755" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "960883fb-4c58-4791-bcd9-047ce3edc43b++7755" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C53CACA6-7629-4834-8DE3-D6AE981AC094",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "960883fb-4c58-4791-bcd9-047ce3edc43b++7755" : "%E6%B2%83%E6%8A%95%E8%B5%84120709\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "555",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "555.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/182.92.176.231\/data\/svn\/ios.otouzi.com",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "960883fb-4c58-4791-bcd9-047ce3edc43b++7755"
+    }
+  ]
+}
