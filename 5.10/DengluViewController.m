@@ -633,7 +633,9 @@
                   NSLog(@"登录成功%@",responseObject);
 
                   
-               
+               /*
+                *远程测试
+                */
                   if ([[objc1 objectForKey:@"code"]isEqualToNumber:@200]) {
                       
                 [[NSNotificationCenter defaultCenter]postNotificationName:@"investSucess" object:self];
